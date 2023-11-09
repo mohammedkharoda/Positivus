@@ -16,6 +16,7 @@ import CONTENT_MARKETING from './image/many-browser.png'
 import ANALYTICS from './image/analystics-tracking.png'
 import ARROW_WHITE from './icons/white-arrow.svg'
 import MAKE_IT_HAPPEN from './image/let-make-this.svg'
+import GREEN_ARROW from './icons/green-arrow.svg'
 const assets = {
     images: {
         HERO_ILLUSTRATION,
@@ -37,7 +38,8 @@ const assets = {
         ZOOM,
         BLOOMBERGE,
         ARROW_BLACK,
-        ARROW_WHITE
+        ARROW_WHITE,
+        GREEN_ARROW
     }
 }
 

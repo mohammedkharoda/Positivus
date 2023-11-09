@@ -3,6 +3,7 @@ import Hero from "./components/Hero.tsx";
 import Sponsor from "./components/sponsor.tsx";
 import Services from "./components/Services.tsx";
 import Proposal from "./components/Proposal.tsx";
+import CaseStudy from "./components/CaseStudy.tsx";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Sponsor />
         <Services />
         <Proposal />
+        <CaseStudy/>
       </div>
     </div>
   );

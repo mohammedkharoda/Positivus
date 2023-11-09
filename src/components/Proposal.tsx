@@ -24,3 +24,4 @@ const Proposal = () => {
 };
 
 export default Proposal;
+
