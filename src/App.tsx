@@ -1,11 +1,21 @@
-import React from 'react'
+import Navbar from "./components/Navbar.tsx";
+import Hero from "./components/Hero.tsx";
+import Sponsor from "./components/sponsor.tsx";
+import Services from "./components/Services.tsx";
+import Proposal from "./components/Proposal.tsx";
 
 const App = () => {
   return (
-    <h1 className="font-grotesk text-2xl text-black_color underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div className="container mx-auto mt-5">
+      <div className="flex flex-col gap-[70px]">
+        <Navbar />
+        <Hero />
+        <Sponsor />
+        <Services />
+        <Proposal />
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;
