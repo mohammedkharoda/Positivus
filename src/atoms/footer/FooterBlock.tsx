@@ -8,7 +8,7 @@ import { BsInstagram } from "react-icons/bs";
 const FooterBlock = () => {
   return (
     <>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center md:flex-wrap md:gap-[10px]">
         {/* heading */}
         <div className="flex gap-3">
           <img src={assets.icon.FOOTER_ICON} alt="logo-positivus" />

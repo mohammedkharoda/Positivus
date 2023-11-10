@@ -3,7 +3,7 @@ import { navbarData } from "../db/navbar";
 import { twMerge } from "tailwind-merge";
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="mt-10 flex justify-between items-center">
       <div className="flex items-center w-fit gap-5">
         <img src={assets.icon.LOGO} alt="icon" />
         <h1 className="text-[20px] font-grotesk font-normal">Positivus</h1>

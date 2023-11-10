@@ -7,22 +7,26 @@ import CaseStudy from "./components/CaseStudy.tsx";
 import OurWorking from "./components/OurWorking.tsx";
 import ContactUs from "./components/ContactUs.tsx";
 import Footer from "./components/Footer.tsx";
+import MaxWrapper from "./wrappers/MaxWrappers.tsx";
+import SecondaryWrapper from "./wrappers/SecondaryWrappers.tsx";
 
 const App = () => {
   return (
-    <div className="container mx-auto mt-5">
-      <div className="flex flex-col gap-[70px]">
-        <Navbar />
-        <Hero />
-        <Sponsor />
-        <Services />
-        <Proposal />
-        <CaseStudy />
-        <OurWorking />
-        <ContactUs />
-        <Footer />
-      </div>
-    </div>
+    <MaxWrapper>
+      <SecondaryWrapper>
+        <div className="flex flex-col gap-[70px]">
+          <Navbar />
+          <Hero />
+          <Sponsor />
+          <Services />
+          <Proposal />
+          <CaseStudy />
+          <OurWorking />
+          <ContactUs />
+          <Footer />
+        </div>
+      </SecondaryWrapper>
+    </MaxWrapper>
   );
 };
 

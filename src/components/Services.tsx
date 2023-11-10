@@ -12,7 +12,7 @@ const Services = () => {
           businesses grow and succeed online. These services include:
         </div>
       </div>
-      <div className="grid grid-cols-2 grid-rows-3 gap-4">
+      <div className="grid grid-cols-2 grid-rows-3 gap-4 md:grid-cols-1">
         <Card />
       </div>
     </>

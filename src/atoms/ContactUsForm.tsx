@@ -7,7 +7,7 @@ const ContactUsForm = () => {
       <div className="bg-grey_color rounded-[25px] px-[100px] py-[60px]">
         <div className="flex justify-between items-center">
           <div className="flex gap-[40px] flex-col">
-            <div className="flex gap-[20px] flex-col w-fit">
+            <div className="flex gap-[20px] flex-col w-fit md:w-2/3">
               <div className="flex flex-col gap-[10px]">
                 <label
                   htmlFor="name"
@@ -49,14 +49,16 @@ const ContactUsForm = () => {
                   wrap="hard"
                   name="message"
                   rows={8}
-                  cols={80}
+                  cols={50}
                   id="message"
                   className="border-black_color border-2 border-solid resize-none"
                 />
               </div>
             </div>
           </div>
-          <img src={assets.images.GET_IN_TOUCH} alt="star-image" />
+          <div className="md:hidden">
+            <img src={assets.images.GET_IN_TOUCH} alt="star-image" />
+          </div>
         </div>
         <Button className="text-[#fff] w-1/4 rounded-[10px] mt-5">
           Send Message
