@@ -1,9 +1,12 @@
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
-import Sponsor from "./components/sponsor.tsx";
+import Sponsor from "./components/Sponsor.tsx";
 import Services from "./components/Services.tsx";
 import Proposal from "./components/Proposal.tsx";
 import CaseStudy from "./components/CaseStudy.tsx";
+import OurWorking from "./components/OurWorking.tsx";
+import ContactUs from "./components/ContactUs.tsx";
+import Footer from "./components/Footer.tsx";
 
 const App = () => {
   return (
@@ -14,7 +17,10 @@ const App = () => {
         <Sponsor />
         <Services />
         <Proposal />
-        <CaseStudy/>
+        <CaseStudy />
+        <OurWorking />
+        <ContactUs />
+        <Footer />
       </div>
     </div>
   );

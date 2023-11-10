@@ -4,7 +4,7 @@ import { caseStudy } from "../db/case-study";
 
 const CaseContainer = () => {
   return (
-    <div className="bg-black_color px-[60px] py-[70px]">
+    <div className="bg-black_color px-[60px] py-[70px] rounded-[25px]">
       <div className="flex">
         {caseStudy.map((item, index) => (
           <div

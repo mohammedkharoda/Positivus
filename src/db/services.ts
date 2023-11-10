@@ -35,8 +35,7 @@ export const services = [{
     backgroundColor: "bg-[#000]",
     title: "Analytics and Tracking",
     arrow: assets.icon.ARROW_BLACK,
-    serviceImage: assets.images.CONTENT_MARKETING,
+    serviceImage: assets.images.ANALYTICS,
     textBackgroundColor: "bg-[#b9ff66]",
     learnMore: "text-[#fff]"
-
 }]
