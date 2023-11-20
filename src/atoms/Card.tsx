@@ -12,7 +12,7 @@ const Card = () => {
               service.backgroundColor && service.backgroundColor
             )}
           >
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between gap-5">
               <p
                 className={twMerge(
                   "bg-primary_color text-black_color font-grotesk text-[30px] font-medium px-4 max-w-[320px] rounded-lg",
@@ -33,7 +33,11 @@ const Card = () => {
                 </p>
               </div>
             </div>
-            <img src={service.serviceImage} alt="seo-image" />
+            <img
+              src={service.serviceImage}
+              alt="seo-image"
+              className="hidden md:block"
+            />
           </div>
         </>
       ))}

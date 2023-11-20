@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       ))}
       {/* right */}
-      <div className="w-[600px] h-[515px]">
+      <div className="w-[600px] h-[515px] hidden md:block">
         <img src={assets.images.HERO_ILLUSTRATION} />
       </div>
     </div>

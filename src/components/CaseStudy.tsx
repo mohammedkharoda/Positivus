@@ -3,7 +3,7 @@ import CaseContainer from "../atoms/CaseContainer";
 const CaseStudy = () => {
   return (
     <>
-      <div className="flex gap-[40px] w-fit items-center">
+      <div className="flex gap-[40px] w-fit md:items-center flex-wrap justify-center">
         <div className="font-grotesk font-medium text-[40px] bg-primary_color text-black_color px-7 w-fit rounded-lg">
           Case Studies
         </div>

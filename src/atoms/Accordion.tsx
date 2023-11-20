@@ -19,12 +19,12 @@ const Accordion = ({ title, content, index }: AccordionProps) => {
       className={twMerge(
         " mb-4 border-2 border-solid border-black_color rounded-[25px] drop-shadow-md",
         !isOpen
-          ? "bg-grey_color px-[60px] py-[40px]"
-          : "bg-primary_color px-[60px] py-[40px]"
+          ? "bg-grey_color md:px-[60px] md:py-[40px]"
+          : "bg-primary_color md:px-[60px] md:py-[40px]"
       )}
     >
       <div
-        className="flex items-center justify-between p-4 bg-gray-800 text-white cursor-pointer"
+        className="flex items-center justify-between p-4 bg-gray-800 text-white cursor-pointer flex-wrap md:flex-nowrap"
         onClick={toggleAccordion}
       >
         <div className="flex items-center gap-[25px]">

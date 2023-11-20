@@ -4,7 +4,7 @@ import Button from "./Button";
 const ContactUsForm = () => {
   return (
     <>
-      <div className="bg-grey_color rounded-[25px] px-[100px] py-[60px]">
+      <div className="bg-grey_color rounded-[25px] md:px-[100px] py-[60px] px-10">
         <div className="flex justify-between items-center">
           <div className="flex gap-[40px] flex-col">
             <div className="flex gap-[20px] flex-col w-fit md:w-2/3">
@@ -49,18 +49,22 @@ const ContactUsForm = () => {
                   wrap="hard"
                   name="message"
                   rows={8}
-                  cols={50}
+                  cols={30}
                   id="message"
                   className="border-black_color border-2 border-solid resize-none"
                 />
               </div>
             </div>
           </div>
-          <div className="md:hidden">
-            <img src={assets.images.GET_IN_TOUCH} alt="star-image" />
+          <div>
+            <img
+              src={assets.images.GET_IN_TOUCH}
+              alt="star-image"
+              className="hidden md:hidden lg:block"
+            />
           </div>
         </div>
-        <Button className="text-[#fff] w-1/4 rounded-[10px] mt-5">
+        <Button className="text-[#fff] w-1/4 rounded-[10px] mt-5 min-w-max">
           Send Message
         </Button>
       </div>

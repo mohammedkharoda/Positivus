@@ -1,7 +1,7 @@
 import { sponsor } from "../db/sponsor";
 const Sponsor = () => {
   return (
-    <div className="flex justify-between md:flex-wrap">
+    <div className="flex md:justify-between md:flex-wrap flex-wrap justify-center ">
       {sponsor.map((sponsors) => (
         <div className="w-[200px] h-[200px]">
           <img

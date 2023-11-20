@@ -3,7 +3,7 @@ import Card from "../atoms/Card";
 const Services = () => {
   return (
     <>
-      <div className="flex gap-[40px] w-fit items-center">
+      <div className="flex gap-[40px] w-fit md:flex-nowrap md:items-center flex-wrap justify-center ">
         <div className="font-grotesk font-medium text-[40px] bg-primary_color text-black_color px-7 w-fit rounded-lg">
           Services
         </div>
@@ -12,7 +12,7 @@ const Services = () => {
           businesses grow and succeed online. These services include:
         </div>
       </div>
-      <div className="grid grid-cols-2 grid-rows-3 gap-4 md:grid-cols-1">
+      <div className="grid xl:grid-cols-2 grid-rows-3 gap-4 md:grid-cols-1">
         <Card />
       </div>
     </>
