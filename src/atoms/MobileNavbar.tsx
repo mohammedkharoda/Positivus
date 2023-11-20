@@ -12,7 +12,6 @@ const MobileNavbar: React.FC = () => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    console.log("close");
   };
 
   return (
@@ -23,17 +22,25 @@ const MobileNavbar: React.FC = () => {
       </div>
       <button
         className="cursor-pointer"
-        onClick={isMenuOpen ? closeMenu : toggleMenu}
+        onClick={() => {
+          toggleMenu();
+        }}
       >
         {isMenuOpen ? (
-          <FiXCircle size={24} onClick={toggleMenu} />
+          <FiXCircle
+            size={24}
+            onClick={() => {
+              toggleMenu();
+              console.log("icon");
+            }}
+          />
         ) : (
           <FiMenu className="text-2xl" />
         )}
       </button>
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-white z-50">
-          <div className="bg-black_color/90 h-full w-full">
+        <div className="fixed top-0 left-0 h-full w-full bg-grey_color z-[-50]">
+          <div className="bg-black_color/90  w-full">
             <ul className="flex flex-col items-center mt-20 gap-5 py-20">
               {navbarData?.map((nav, index) => (
                 <li
