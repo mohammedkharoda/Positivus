@@ -1,9 +1,12 @@
 import assets from "../assets";
 import Button from "../atoms/Button";
 
-const Proposal = () => {
+interface ProposalProps {
+  id: string
+}
+const Proposal = ({ id }: ProposalProps) => {
   return (
-    <div className="bg-grey_color md:px-[60px] p-20 flex gap-5 items-center justify-between rounded-[20px]">
+    <div className="bg-grey_color md:px-[60px] p-20 flex gap-5 items-center justify-between rounded-[20px]" id={id}>
       <div className="flex gap-4 flex-col">
         <p className="font-grotesk text-[#000] text-[30px] font-medium leading-normal">
           Let's make things happen

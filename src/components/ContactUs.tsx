@@ -1,9 +1,11 @@
 import ContactUsForm from "../atoms/ContactUsForm";
-
-const ContactUs = () => {
+interface ContactUsProps {
+  id: string
+}
+const ContactUs = ({ id }: ContactUsProps) => {
   return (
     <>
-      <div className="flex gap-[40px] w-fit md:items-center flex-wrap">
+      <div className="flex gap-[40px] w-fit md:items-center flex-wrap" id={id}>
         <div className="font-grotesk font-medium text-[40px] bg-primary_color text-black_color px-7 md:w-fit rounded-lg min-w-max">
           Contact Us
         </div>

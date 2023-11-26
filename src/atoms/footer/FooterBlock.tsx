@@ -19,8 +19,7 @@ const FooterBlock = () => {
         {/* services */}
         <ul className="flex gap-8 items-center flex-wrap">
           {navbarData?.map((nav, index) => (
-            <>
-              <div key={nav.title}>
+            <div key={index}>
                 <li
                   className={twMerge(
                     "text-[18px] text-[#fff] font-grotesk font-normal cursor-pointer hover:scale-125 hover:underline hover:underline-offset-4",
@@ -30,8 +29,7 @@ const FooterBlock = () => {
                 >
                   {nav.title}
                 </li>
-              </div>
-            </>
+            </div>
           ))}
         </ul>
         {/* logos */}

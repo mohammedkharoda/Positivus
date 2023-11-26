@@ -1,9 +1,12 @@
 import { heroData } from "../db/hero-section";
 import Button from "../atoms/Button";
 import assets from "../assets";
-const Hero = () => {
+interface Heroprops {
+  id: string
+}
+const Hero = ({ id }: Heroprops) => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center" id={id}>
       {/* left */}
       {heroData.map((hero, index) => (
         <div key={index} className="flex flex-col gap-5">

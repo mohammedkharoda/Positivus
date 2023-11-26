@@ -1,10 +1,12 @@
 import Accordion from "../atoms/Accordion";
 import { workingProcess } from "../db/working";
-
-const OurWorking = () => {
+interface OurWorkingProps {
+  id: string
+}
+const OurWorking = ({ id }: OurWorkingProps) => {
   return (
     <>
-      <div className="flex gap-[40px] w-fit md:items-center flex-wrap justify-center">
+      <div className="flex gap-[40px] w-fit md:items-center flex-wrap justify-center" id={id}>
         <div className="font-grotesk font-medium text-[40px] bg-primary_color text-black_color px-7 w-fit rounded-lg text-center md:text-left">
           Our Working Process
         </div>

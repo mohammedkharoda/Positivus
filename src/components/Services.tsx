@@ -1,9 +1,11 @@
 import Card from "../atoms/Card";
-
-const Services = () => {
+interface ServicesProps {
+  id: string
+}
+const Services = ({ id }: ServicesProps) => {
   return (
     <>
-      <div className="flex gap-[40px] w-fit md:flex-nowrap md:items-center flex-wrap justify-center ">
+      <div className="flex gap-[40px] w-fit md:flex-nowrap md:items-center flex-wrap justify-center" id={id}>
         <div className="font-grotesk font-medium text-[40px] bg-primary_color text-black_color px-7 w-fit rounded-lg">
           Services
         </div>

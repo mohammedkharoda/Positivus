@@ -16,13 +16,13 @@ const App = () => {
       <SecondaryWrapper>
         <div className="flex flex-col gap-[70px]">
           <Navbar />
-          <Hero />
-          <Sponsor />
-          <Services />
-          <Proposal />
-          <CaseStudy />
-          <OurWorking />
-          <ContactUs />
+          <Hero id="hero" />
+          <Sponsor id="sponsor" />
+          <Services id="services" />
+          <Proposal id="proposal" />
+          <CaseStudy id="caseStudy" />
+          <OurWorking id="ourWorking" />
+          <ContactUs id="contactUs" />
           <Footer />
         </div>
       </SecondaryWrapper>

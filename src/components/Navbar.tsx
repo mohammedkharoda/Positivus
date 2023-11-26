@@ -1,5 +1,5 @@
-// Navbar.tsx
 import React from "react";
+import Link from "react-scroll/modules/components/Link";
 import { navbarData } from "../db/navbar";
 import { twMerge } from "tailwind-merge";
 import assets from "../assets";
@@ -26,10 +26,17 @@ const Navbar: React.FC = () => {
               className={twMerge(
                 "text-[18px] font-grotesk font-normal cursor-pointer hover:scale-125 hover:underline hover:underline-offset-4",
                 index === navbarData.length - 1 &&
-                  "border border-black_color px-4 py-2 rounded-[10px] hover:bg-primary_color hover:text-black_color "
+                "border border-black_color px-4 py-2 rounded-[10px] hover:bg-primary_color hover:text-black_color "
               )}
             >
-              {nav.title}
+              <Link
+                to={nav.url}
+                smooth={true}
+                duration={500}
+                spy={true}
+              >
+                {nav.title}
+              </Link>
             </li>
           ))}
         </ul>
