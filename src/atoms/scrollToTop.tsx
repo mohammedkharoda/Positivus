@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { BsArrowUp } from "react-icons/bs";
 
-const ScrollToTop: React.FC = () => {
+const ScrollToTop = () => {
     const distanceToShow: number = 200
     const [show, setShow] = useState(false)
 

@@ -1,10 +1,9 @@
-import React from "react";
 import { navbarData } from "../db/navbar";
 import { twMerge } from "tailwind-merge";
 import assets from "../assets";
 import MobileNavbar from "../atoms/MobileNavbar";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <div className="mt-10 flex justify-between items-center">
       {/* Desktop Navbar */}

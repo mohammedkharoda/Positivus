@@ -25,7 +25,7 @@ const Card = () => {
                 <p
                   className={twMerge(
                     "font-grotesk text-[20px] font-normal text-black_color cursor-pointer hover:underline group-hover:underline-offset-4",
-                    service.learnMore
+                    service?.learnMore
                   )}
                 >
                   Learn more
