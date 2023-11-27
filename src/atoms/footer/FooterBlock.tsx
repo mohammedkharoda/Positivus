@@ -20,27 +20,27 @@ const FooterBlock = () => {
         <ul className="flex gap-8 items-center flex-wrap">
           {navbarData?.map((nav, index) => (
             <div key={index}>
-                <li
-                  className={twMerge(
-                    "text-[18px] text-[#fff] font-grotesk font-normal cursor-pointer hover:scale-125 hover:underline hover:underline-offset-4",
-                    index === navbarData.length - 1 &&
-                      "border border-black_color px-4 py-2 rounded-[10px] hover:bg-primary_color hover:text-black_color "
-                  )}
-                >
-                  {nav.title}
-                </li>
+              <li
+                className={twMerge(
+                  "text-[18px] text-[#fff] font-grotesk font-normal cursor-pointer hover:scale-110 hover:underline hover:underline-offset-4",
+                  index === navbarData.length - 1 &&
+                  "border border-black_color px-4 py-2 rounded-[10px] hover:bg-primary_color hover:text-black_color hover:no-underline"
+                )}
+              >
+                {nav.title}
+              </li>
             </div>
           ))}
         </ul>
         {/* logos */}
         <div className="flex gap-[20px]">
-          <div className="bg-grey_color p-2 rounded-[30px]">
+          <div className="bg-grey_color p-2 rounded-[30px] cursor-pointer">
             <FaLinkedinIn size={26} />
           </div>
-          <div className="bg-grey_color p-2 rounded-[30px]">
+          <div className="bg-grey_color p-2 rounded-[30px] cursor-pointer">
             <RiTwitterXLine size={26} />
           </div>
-          <div className="bg-grey_color p-2 rounded-[30px]">
+          <div className="bg-grey_color p-2 rounded-[30px] cursor-pointer">
             <BsInstagram size={26} />
           </div>
         </div>

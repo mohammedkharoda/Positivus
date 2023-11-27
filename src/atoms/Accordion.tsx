@@ -37,11 +37,11 @@ const Accordion = ({ title, content, index }: AccordionProps) => {
         </div>
         <span className="transform transition-transform">
           {isOpen ? (
-            <div className="bg-[#fff] p-4 rounded-full">
+            <div className="bg-[#fff] p-4 rounded-full transition-colors duration-150 hover:bg-[#000] hover:text-[#fff]">
               <BiMinus size={30} />
             </div>
           ) : (
-            <div className="bg-[#fff] p-4 rounded-full">
+            <div className="bg-[#fff] p-4 rounded-full transition-colors duration-150 hover:bg-[#000] hover:text-[#fff]">
               <BiPlus size={30} />
             </div>
           )}

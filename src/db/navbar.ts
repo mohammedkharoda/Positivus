@@ -11,10 +11,10 @@ export const navbarData = [
     title: "Proposal",
     url: "#proposal",
   },
-  {
-    title: "Team",
-    url: "#team",
-  },
+  // {
+  //   title: "Team",
+  //   url: "#team",
+  // },
   {
     title: "Use Cases",
     url: "#case_study",

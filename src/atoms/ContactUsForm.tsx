@@ -5,9 +5,9 @@ const ContactUsForm = () => {
   return (
     <>
       <div className="bg-grey_color rounded-[25px] md:px-[100px] py-[60px] px-10">
-        <div className="flex justify-between items-center">
-          <div className="flex gap-[40px] flex-col">
-            <div className="flex gap-[20px] flex-col w-fit md:w-2/3">
+        <div className="flex justify-between items-center gap-4">
+          <div className="flex gap-[40px] flex-col w-full md:w-1/2">
+            <div className="flex gap-[20px] flex-col">
               <div className="flex flex-col gap-[10px]">
                 <label
                   htmlFor="name"
@@ -19,7 +19,7 @@ const ContactUsForm = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="border-2 border-solid border-black_color rounded-[25px] px-[20px] py-[10px]"
+                  className="border border-solid border-black_color rounded-lg px-[20px] py-[10px]"
                 />
               </div>
               <div className="flex flex-col gap-[10px]">
@@ -33,11 +33,11 @@ const ContactUsForm = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="border-2 border-solid border-black_color rounded-[25px] px-[20px] py-[10px]"
+                  className="border border-solid border-black_color rounded-lg px-[20px] py-[10px]"
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-[20px] w-fit">
+            <div className="flex flex-col gap-[20px] w-full">
               <div className="flex flex-col gap-[10px]">
                 <label
                   htmlFor="Message"
@@ -51,12 +51,17 @@ const ContactUsForm = () => {
                   rows={8}
                   cols={30}
                   id="message"
-                  className="border-black_color border-2 border-solid resize-none"
+                  className="border-black_color border border-solid rounded-lg resize-none py-2 px-4"
                 />
               </div>
             </div>
+            <div>
+              <Button className="text-[#fff] w-full rounded-[10px] mt-5 min-w-max">
+                Send Message
+              </Button>
+            </div>
           </div>
-          <div>
+          <div className="flex justify-end w-1/2">
             <img
               src={assets.images.GET_IN_TOUCH}
               alt="star-image"
@@ -64,9 +69,6 @@ const ContactUsForm = () => {
             />
           </div>
         </div>
-        <Button className="text-[#fff] w-1/4 rounded-[10px] mt-5 min-w-max">
-          Send Message
-        </Button>
       </div>
     </>
   );

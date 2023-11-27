@@ -8,7 +8,7 @@ export const services = [{
     textBackgroundColor: "bg-[#b9ff66]",
 }, {
     backgroundColor: "bg-[#b9ff66]",
-    title: "pay-per-click advertising",
+    title: "Pay-per-click advertising",
     arrow: assets.icon.ARROW_BLACK,
     serviceImage: assets.images.PAY_PER_CLICK,
     textBackgroundColor: "bg-[#fff]",

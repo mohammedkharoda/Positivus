@@ -1,3 +1,4 @@
+import "./style.css";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
 import Sponsor from "./components/Sponsor.tsx";
@@ -9,6 +10,7 @@ import ContactUs from "./components/ContactUs.tsx";
 import Footer from "./components/Footer.tsx";
 import MaxWrapper from "./wrappers/MaxWrappers.tsx";
 import SecondaryWrapper from "./wrappers/SecondaryWrappers.tsx";
+import ScrollToTop from "./atoms/scrollToTop.tsx";
 
 const App = () => {
   return (
@@ -20,10 +22,11 @@ const App = () => {
           <Sponsor id="sponsor" />
           <Services id="services" />
           <Proposal id="proposal" />
-          <CaseStudy id="caseStudy" />
-          <OurWorking id="ourWorking" />
-          <ContactUs id="contactUs" />
+          <CaseStudy id="case_study" />
+          <OurWorking id="our_working" />
+          <ContactUs id="contact_us" />
           <Footer />
+          <ScrollToTop />
         </div>
       </SecondaryWrapper>
     </MaxWrapper>

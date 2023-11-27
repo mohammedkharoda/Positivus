@@ -15,9 +15,9 @@ const CaseContainer = () => {
             key={index}
           >
             {item.case}
-            <div className="flex items-center gap-[15px] pt-5 justify-center md:justify-normal">
-              <p className="text-primary_color">Learn More</p>
-              <img src={assets.icon.GREEN_ARROW} alt="green arrow" />
+            <div className="group flex items-center gap-[15px] pt-5 justify-center md:justify-normal cursor-pointer">
+              <p className="text-primary_color group-hover:underline">Learn More</p>
+              <img src={assets.icon.GREEN_ARROW} alt="green arrow" className="transition-transform duration-300 group-hover:rotate-[30deg]" />
             </div>
           </div>
         ))}
